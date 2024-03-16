@@ -1,7 +1,8 @@
 * {
     margin: 0;
-    box-sizing: content-box;
+    box-sizing: border-box;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #464646;
 }
 
 body {
@@ -20,14 +21,24 @@ nav {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 30px;
-    background-color: #fff;
+    gap: 50px;
+    background-color: #f1f1f1;
+}
+
+nav * {
+    font-size: larger;
+    text-decoration: none;
+}
+
+nav *:hover {
+    scale: 1.1;
+    transition: 0.2s;
 }
 
 .section {
-    width: 400px;
-    height: 300px;
-    background-color: #fff;
+    width: 500px;
+    height: 330px;
+    background-color: #f1f1f1;
     padding: 50px;
     margin-top: 200px;
     margin-left: 50%;
@@ -36,6 +47,17 @@ nav {
     gap: 20px;
 }
 
+.section h4 {
+    font-style: italic;
+}
+
+.section a {
+    text-decoration: none;
+}
+
+.section h2:hover {
+    text-decoration: underline;
+}
 
 
 .container {
@@ -49,19 +71,34 @@ nav {
 }
 
 .menu {
-    width: 350px;
-    height: 450px;
-    background-color: #fff;
-    padding: 30px;
+    width: 400px;
+    height: 530px;
+    background-color: #f1f1f1;
     display: flex;
+    gap: 10px;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: flex-start;
+    font-style: italic;
+}
+
+.menu:hover {
+    scale: 1.03;
+    transition: 0.3s ease-in-out;
+}
+
+.menu .text {
+    padding: 15px;
+}
+
+.menu .text span {
+    font-size: x-large;
+    font-weight: 800;
 }
 
 .menu img {
     width: 100%;
-    height: 50%;
+    height: 350px
 }
 
 
@@ -69,7 +106,7 @@ nav {
 .contact-info {
     width: 600px;
     height: 500px;
-    background-color: #fff;
+    background-color: #f1f1f1;
     padding: 30px;
     margin: 100px auto auto auto;
     display: flex;
@@ -90,8 +127,8 @@ footer {
     width: 100%;
     height: 70px;
     bottom: 0;
-    background-color: #252525;
-    color: #E7DFC6;
+    background-color: #f1f1f1;
+    color: #000000;
     text-align: center;
     display: flex;
     align-items: center;

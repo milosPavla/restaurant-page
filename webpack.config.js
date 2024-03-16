@@ -5,6 +5,9 @@ module.exports = {
     mode: 'development',
     entry: {
         bundle: path.resolve(__dirname, 'src/index.js'),
+        home: path.resolve(__dirname, 'src/home.js'), 
+        menu: path.resolve(__dirname, 'src/menu.js'),
+        contact: path.resolve(__dirname, 'src/contact.js'),
     },
     output: {
         path: path.resolve(__dirname, 'dist/'),
@@ -43,16 +46,19 @@ module.exports = {
             title: 'Homepage',
             filename: 'home.html',
             template: 'src/home.html',
+            chunks: ['home'],
         }),
         new HtmlWebpackPlugin({
             title: 'Menu',
             filename: 'menu.html',
             template: 'src/menu.html',
+            chunks: ['menu'],
         }),
         new HtmlWebpackPlugin({
             title: 'Contact',
             filename: 'contact.html',
             template: 'src/contact.html',
+            chunks: ['contact'],
         }),
     ],
 }
